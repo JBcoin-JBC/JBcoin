@@ -1,0 +1,6 @@
+
+codecov:
+  ci:
+    - ci.ops.jbcoin.com  # add custom jenkins server
+    - !appveyor
+    - !travis
