@@ -2312,8 +2312,10 @@ Json::Value NetworkOPsImp::getServerInfo (bool human, bool admin, bool counters)
         else
         {
             l[jss::base_fee_jbc] = Json::Value::UInt (baseFee);
-            l[jss::reserve_base_jbc]   = Json::Value::UInt (lpClosed->fees().accountReserve(0).drops());
-            l[jss::reserve_inc_jbc]    = Json::Value::UInt (lpClosed->fees().increment);
+            l[jss::reserve_base_jbc]   = Json::Value::UInt (
+                    lpClosed->fees().accountReserve(0).drops() / SYSTEM_CURRENCY_PARTS);
+            l[jss::reserve_inc_jbc]    = Json::Value::UInt (
+                    lpClosed->fees().increment / SYSTEM_CURRENCY_PARTS);
 
             auto const nowOffset = app_.timeKeeper().nowOffset();
             if (std::abs (nowOffset.count()) >= 60)

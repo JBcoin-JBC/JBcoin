@@ -46,10 +46,10 @@ public:
         std::uint32_t const reference_fee_units = 0;
 
         /** The account reserve requirement in drops. */
-        std::uint64_t account_reserve = 0;
+        std::uint64_t account_reserve = 1 * SYSTEM_CURRENCY_PARTS;
 
         /** The per-owned item reserve requirement in drops. */
-        std::uint64_t owner_reserve = 0;
+        std::uint64_t owner_reserve = 1 * SYSTEM_CURRENCY_PARTS;
     };
 
     virtual ~FeeVote () = default;
