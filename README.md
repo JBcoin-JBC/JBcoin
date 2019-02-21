@@ -29,7 +29,13 @@ git-subtree. See those directories' README files for more details.
 
 
 ## See Also
+About swap
+From ERB 20 based JBCOIN
+I will exchange it to XRP based JBCOIN.
+The replacement time will start on March 1.
 
+Exchange site
+https://account.jbcoin.io/mypage/
 
 To learn about how JBCoin is transforming global payments, visit
 <https://jbcoin.io>
