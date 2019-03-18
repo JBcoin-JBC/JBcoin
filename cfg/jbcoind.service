@@ -1,0 +1,14 @@
+[Unit]
+Description=Jbc Daemon
+
+[Service]
+Type=simple
+ExecStart=/opt/jbc/bin/jbcoind --silent --conf /etc/opt/jbc/jbcoind.cfg
+# Default KillSignal can be used if/when jbcoind handles SIGTERM
+KillSignal=SIGINT
+Restart=no
+User=jbcoind
+Group=jbcoind
+
+[Install]
+WantedBy=multi-user.target
