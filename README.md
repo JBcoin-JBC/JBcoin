@@ -30,7 +30,7 @@ git-subtree. See those directories' README files for more details.
 
 ## See Also
 About swap<br>
-From ERB 20 based JBCOIN<br>
+From ERC 20 based JBCOIN<br>
 I will exchange it to XRP based JBCOIN.<br>
 The replacement time will start on March 1.
 
